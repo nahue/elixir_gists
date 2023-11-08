@@ -39,7 +39,10 @@
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <div class="relative ml-3">
           <div>
-            <button class="relative flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <button
+              phx-click={ElixirGistWeb.Layouts.App.toggle_dropdown_menu()}
+              class="relative flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+            >
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Open user menu</span>
               <img
@@ -49,7 +52,12 @@
               />
             </button>
           </div>
-          <div class="absolute right-0 z-10 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div
+            id="dropdown_menu"
+            phx-click-away={ElixirGistWeb.Layouts.App.toggle_dropdown_menu()}
+            class="absolute right-0 z-10 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            hidden="true"
+          >
             <%= if @current_user do %>
               <a
                 href="#"

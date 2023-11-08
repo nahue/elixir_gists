@@ -18,4 +18,4 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Source: https://github.com/phoenixframework/phoenix
 
 ## Current Lesson
-https://www.youtube.com/watch?v=tEKu59W7S-M&ab_channel=ElixirMentor
+https://www.youtube.com/watch?v=W5erH5O1akQ&ab_channel=ElixirMentor
