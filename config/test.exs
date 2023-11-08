@@ -13,6 +13,7 @@ config :elixir_gist, ElixirGist.Repo,
   password: "postgres",
   hostname: "localhost",
   database: "elixir_gist_test#{System.get_env("MIX_TEST_PARTITION")}",
+  port: 15432,
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 
