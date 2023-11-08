@@ -1,5 +1,5 @@
-<header class="bg-gray-800">
-  <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
+<header class="w-full bg-gray-800">
+  <div class="px-2 mx-auto bg-gray-800 max-w-7xl sm:px-6 lg:px-8">
     <div class="relative flex items-center justify-between h-16">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         MOBILE MENU
@@ -92,6 +92,9 @@
                 Log out
               </.link>
             <% else %>
+              <.link href={~p"/users/register"} class="block px-4 py-2 text-sm text-gray-700">
+                Register
+              </.link>
               <.link href={~p"/users/log_in"} class="block px-4 py-2 text-sm text-gray-700">
                 Log in
               </.link>
