@@ -86,6 +86,4 @@ jobs:
             _build
           key: ${{ runner.os }}-${{ matrix.otp }}-${{ matrix.elixir }}-${{ hashFiles('mix.lock') }}
       - name: Run tests
-        env:
-          DB_HOSTNAME: db
         run: mix test
