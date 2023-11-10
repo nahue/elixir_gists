@@ -11,7 +11,7 @@ config :bcrypt_elixir, :log_rounds, 1
 config :elixir_gist, ElixirGist.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: System.get_env("DB_HOSTNAME", "localhost"),
+  hostname: "localhost",
   database: "elixir_gist_test#{System.get_env("MIX_TEST_PARTITION")}",
   port: 15432,
   pool: Ecto.Adapters.SQL.Sandbox,

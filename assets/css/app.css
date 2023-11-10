@@ -3,3 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+form input[type="text"] {
+  @apply bg-white text-black text-xs border;
+}
+
